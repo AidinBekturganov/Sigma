@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Sigma.DAL.Migrations
 {
     /// <inheritdoc />
-    public partial class AddedClientModel : Migration
+    public partial class InitialClientSetup : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -21,11 +21,11 @@ namespace Sigma.DAL.Migrations
                     Email = table.Column<string>(type: "text", nullable: false),
                     FirstName = table.Column<string>(type: "text", nullable: false),
                     LastName = table.Column<string>(type: "text", nullable: false),
-                    PhoneNumber = table.Column<string>(type: "text", nullable: false),
-                    StartInterval = table.Column<TimeSpan>(type: "interval", nullable: true),
-                    EndInterval = table.Column<TimeSpan>(type: "interval", nullable: true),
-                    LinkednURL = table.Column<string>(type: "text", nullable: false),
-                    GithubURL = table.Column<string>(type: "text", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "text", nullable: true),
+                    StartInterval = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    EndInterval = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    LinkednURL = table.Column<string>(type: "text", nullable: true),
+                    GithubURL = table.Column<string>(type: "text", nullable: true),
                     Comment = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>

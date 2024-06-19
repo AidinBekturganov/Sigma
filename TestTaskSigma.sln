@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sigma.DAL", "Sigma.DAL\Sigm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sigma.Domain", "Sigma.Domain\Sigma.Domain.csproj", "{346C64A1-DB2F-4753-8E43-0A04EC1B30D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sigma.BLL", "Sigma.BLL\Sigma.BLL.csproj", "{CF2AB7F4-154E-42F8-8C71-2215DCDB3644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sigma.Test", "Sigma.Test\Sigma.Test.csproj", "{605B218F-2683-4CC3-91DB-9C4146FF4593}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{346C64A1-DB2F-4753-8E43-0A04EC1B30D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{346C64A1-DB2F-4753-8E43-0A04EC1B30D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{346C64A1-DB2F-4753-8E43-0A04EC1B30D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF2AB7F4-154E-42F8-8C71-2215DCDB3644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF2AB7F4-154E-42F8-8C71-2215DCDB3644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF2AB7F4-154E-42F8-8C71-2215DCDB3644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF2AB7F4-154E-42F8-8C71-2215DCDB3644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{605B218F-2683-4CC3-91DB-9C4146FF4593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{605B218F-2683-4CC3-91DB-9C4146FF4593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{605B218F-2683-4CC3-91DB-9C4146FF4593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{605B218F-2683-4CC3-91DB-9C4146FF4593}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

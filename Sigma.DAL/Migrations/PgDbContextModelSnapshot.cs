@@ -38,15 +38,14 @@ namespace Sigma.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<TimeSpan?>("EndInterval")
-                        .HasColumnType("interval");
+                    b.Property<DateTime?>("EndInterval")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("GithubURL")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("LastName")
@@ -54,15 +53,13 @@ namespace Sigma.DAL.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("LinkednURL")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("PhoneNumber")
-                        .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<TimeSpan?>("StartInterval")
-                        .HasColumnType("interval");
+                    b.Property<DateTime?>("StartInterval")
+                        .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id");
 

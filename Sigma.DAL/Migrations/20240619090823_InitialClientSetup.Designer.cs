@@ -12,8 +12,8 @@ using Sigma.DAL.DbContext;
 namespace Sigma.DAL.Migrations
 {
     [DbContext(typeof(PgDbContext))]
-    [Migration("20240617083711_AddedClientModel")]
-    partial class AddedClientModel
+    [Migration("20240619090823_InitialClientSetup")]
+    partial class InitialClientSetup
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -41,15 +41,14 @@ namespace Sigma.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<TimeSpan?>("EndInterval")
-                        .HasColumnType("interval");
+                    b.Property<DateTime?>("EndInterval")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("GithubURL")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("LastName")
@@ -57,15 +56,13 @@ namespace Sigma.DAL.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("LinkednURL")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("PhoneNumber")
-                        .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<TimeSpan?>("StartInterval")
-                        .HasColumnType("interval");
+                    b.Property<DateTime?>("StartInterval")
+                        .HasColumnType("timestamp with time zone");
 
                     b.HasKey("Id");
 
